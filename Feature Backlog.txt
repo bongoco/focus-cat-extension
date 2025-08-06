@@ -1,0 +1,18 @@
+To-Do List:
+- Located on bottom right, can hold up to 5 items
+- Each item caps at 50 chars
+- Input box at bottom, item appears above 
+- Dark opacity background
+- Items have delete button on right, checkbox on left
+- Clicking on item crosses it thru, checkbox has check
+
+
+
+
+
+
+
+
+
+
+

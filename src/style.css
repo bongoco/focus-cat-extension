@@ -26,7 +26,34 @@ html, body {
 #clock {
 	font-size: 9vw;
 	color: white;
+  opacity: 1;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+#toggle-clock {
+  position:fixed;
+  bottom:20px;
+  right:15px;
+  z-index: 9999;
+  background: transparent;
+  border:none;
+  cursor:pointer;
+}
+
+#toggle-clock svg{
+  width: 50px;
+  fill: white;
+  transition: fill 0.2s ease;
+}
+
+#toggle-clock:hover svg{
+  fill: rgb(215, 215, 215);
+}
+
+
 
 #slide_bg {
   position: relative;

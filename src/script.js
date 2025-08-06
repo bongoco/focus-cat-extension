@@ -3,6 +3,11 @@ const images=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6
   const bg2=document.getElementById('bg2');
 let currentIndex=Math.floor(Math.random()*images.length);
 let visibleLayer=1;
+let clockDiv;
+
+function toggleClock() {
+  	clockDiv.classList.toggle("hidden");
+}
 
 function clock() {
 	const now = new Date();
@@ -55,7 +60,8 @@ function nextBackground() {
 
 window.onload=function() {
 	const initialImage=`url(${images[currentIndex]})`;
-	
+	clockDiv=document.getElementById("clock");
+
 	//Adding no fade, then removing no fade so first image loads in without black screen
 	bg1.classList.add('no-transition');
 	bg1.style.backgroundImage=initialImage;
@@ -66,6 +72,7 @@ window.onload=function() {
   	bg1.classList.add('visible');
 	clock();
 	setInterval(nextBackground, 15000); //runs nextBackground repetitively every 10 seconds 
+
 }
 
 
