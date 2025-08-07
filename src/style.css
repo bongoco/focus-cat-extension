@@ -25,15 +25,17 @@ html, body {
 
 #clock {
 	font-size: 9vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	color: white;
   opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
-.hidden {
+#clock.clock-off {
   opacity: 0;
 }
 
-#toggle-clock {
+#toggleClock-button {
   position:fixed;
   bottom:20px;
   right:15px;
@@ -43,17 +45,23 @@ html, body {
   cursor:pointer;
 }
 
-#toggle-clock svg{
+#toggleClock-button svg{
   width: 50px;
   fill: white;
   transition: fill 0.2s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-#toggle-clock:hover svg{
-  fill: rgb(215, 215, 215);
+#toggleClock-button.clock-off svg{
+  width: 50px;
+  fill: rgb(162, 162, 162);
+  transition: fill 0.2s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-
+#toggleClock-button:hover svg{
+  fill: rgb(140, 140, 140);
+}
 
 #slide_bg {
   position: relative;

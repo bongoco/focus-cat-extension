@@ -1,12 +1,13 @@
 const images=['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg','img/7.jpg','img/8.jpg','img/9.jpg'];
-  const bg1=document.getElementById('bg1');
-  const bg2=document.getElementById('bg2');
+const bg1=document.getElementById('bg1');
+const bg2=document.getElementById('bg2');
 let currentIndex=Math.floor(Math.random()*images.length);
 let visibleLayer=1;
 let clockDiv;
 
 function toggleClock() {
-  	clockDiv.classList.toggle("hidden");
+  	clockDiv.classList.toggle("clock-off"); //for clock
+	document.getElementById("toggleClock-button").classList.toggle("clock-off"); //for button
 }
 
 function clock() {
