@@ -4,7 +4,7 @@ html, body {
 	margin: 0;
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
-	background-color: black;
+	background-color: rgb(58, 58, 58);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -54,13 +54,18 @@ html, body {
 
 #toggleClock-button.clock-off svg{
   width: 50px;
-  fill: rgb(162, 162, 162);
+  fill: rgb(193, 193, 193);
   transition: fill 0.2s ease;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #toggleClock-button:hover svg{
   fill: rgb(140, 140, 140);
+}
+
+#toggleClock-button:hover {
+  bottom: 22px;
+  transition: 0.5s;
 }
 
 #slide_bg {
