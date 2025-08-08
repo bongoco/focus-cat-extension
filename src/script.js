@@ -5,6 +5,10 @@ let currentIndex=Math.floor(Math.random()*images.length);
 let visibleLayer=1;
 let clockDiv;
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("toggleClock-button").addEventListener("click", toggleClock);
+});
+
 function toggleClock() {
   	clockDiv.classList.toggle("clock-off"); //for clock
 	document.getElementById("toggleClock-button").classList.toggle("clock-off"); //for button
